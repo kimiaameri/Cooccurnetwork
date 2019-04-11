@@ -19,7 +19,7 @@ cd coocnet
 mkdir fasta
 cd fasta
 
-cd $WORK/coocnet
+cd $WORK/Cooccurnetwork
 python3 vcf2fasta.py ../InputFiles.csv $MINICONDA_HOME $GITHUB_DIR
 
 sh vcf2fasta.sh > $WORK/coocnet/fasta
