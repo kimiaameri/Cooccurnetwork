@@ -17,9 +17,11 @@ mkdir coocnet
 cd coocnet
 ## make fastafile directory
 mkdir fasta
-cd fasta
-
-cd $WORK/Cooccurnetwork
+mkdir vcf
+cd vcf
+cp $WORK/SAEVA-outputs/bcfoutput/* ./
+cp $WORK/SAEVA_reference_genome/Staphylococcus_aureus_NCTC_8325/NCBI/2006-02-13/Sequence/BWAIndex/genome.fa ../
+cd $WORK/GITHUB_DIR
 python3 vcf2fasta.py ../InputFiles.csv 
 
 sh vcf2fasta.sh 
