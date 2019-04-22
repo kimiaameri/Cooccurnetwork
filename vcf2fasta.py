@@ -25,10 +25,11 @@ with open(outputFile,'w') as outFile:
             
             
             
+            #---- VCF2Bed
+            #  module load samtools/1.9
+           # sed -i 's/^chr/Chromosome/' genome.fa
+            # bgzip S*.vcf
+           # tabix -p vcf Silverman99624D1_S16_q5000_dp250.vcf.gz
+           # cat genome.fa | vcf-consensus $WORK/coocnet/bcfoutput/Silverman99624D1_S16_q5000_dp250.vcf.gz> $WORK/coocnet/fasta/Silverman99624D1_S16.fa
             
-             sed -i 's/^chr/Chromosome/' genome.fa
-                 bgzip S*.vcf
-
-
-            tabix -p vcf Silverman99624D1_S16_q5000_dp250.vcf.gz
             
